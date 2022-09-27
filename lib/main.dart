@@ -4,20 +4,45 @@ void main() {
   runApp(MyApp());
 }
 
+String my_name = 'George';
+String my_role = 'I hate niggers';
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.white,
           body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
-                  backgroundImage: AssetImage.,
+                  backgroundImage: AssetImage('assets/images/theresa.jpeg'),
                   radius: 50,
-                  backgroundColor: Colors.red,
-                  child: Text('Im Pete'),
+                ),
+                Text(
+                  my_name,
+                  style: TextStyle(fontFamily: 'bungee'),
+                ),
+                Text(
+                  my_role,
+                  style: TextStyle(fontFamily: 'bungee'),
+                ),
+                Container(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        size: 50,
+                        color: Colors.red,
+                      ),
+                      Text(
+                        '+447927654382',
+                        style: TextStyle(color: Colors.red),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
