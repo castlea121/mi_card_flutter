@@ -19,15 +19,15 @@ class MyApp extends StatelessWidget {
               children: [
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/images/theresa.jpeg'),
-                  radius: 50,
+                  radius: 100,
                 ),
                 Text(
                   my_name,
-                  style: TextStyle(fontFamily: 'bungee'),
+                  style: TextStyle(fontFamily: 'bungee', fontSize: 22),
                 ),
                 Text(
                   my_role,
-                  style: TextStyle(fontFamily: 'bungee'),
+                  style: TextStyle(fontFamily: 'bungee', fontSize: 20),
                 ),
                 Container(
                   child: Row(
